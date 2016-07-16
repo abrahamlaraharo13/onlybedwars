@@ -8,13 +8,13 @@
 
 body{
 	background: url(../img/weather.png);
+	font-family: helvetica;
 }
 
 .container{
 	width: 1000px;
 	margin: auto;
 	margin-top:80px;
-	border:1px solid #EBF1F2;
 }
 
 header{
@@ -46,7 +46,7 @@ header nav li{
 }
 
 header form {
-	margin-top: 15px;	
+	margin-top: 12px;	
 	border-radius: 100px;
 	background: white;
 }
@@ -55,10 +55,12 @@ header input{
 	height: 30px;
 	background: transparent;
 	border:0;
-	padding: 10px;
+	padding-left: 15px;
+	min-width: 300px; 
 }
 
 header button{
+	height: 30px;
 	background: transparent;
 	border:0;
 }
@@ -73,16 +75,66 @@ aside, article{
 }
 
 aside{
-	/*background: white;*/
 	width: 300px;
-	height: 1000px;
+	float: right;
 }
 
 article{
-	float: right;
 	width: 680px;
-	background: white;
 	padding: 10px;
+}
+
+section{
+	margin-bottom: 25px;
+	background: white;
+	padding: 20px;
+	box-shadow: 2px 2px 11px #004F88;
+}
+
+aside div.user_information{
+	background: white;
+	padding: 5px;
+	margin-bottom: 20px;
+	box-shadow: 2px 2px 11px #004F88;
+}
+
+div.avatar{
+	float: left;
+}
+
+div.information{
+	float: left;
+	margin-left: 10px;
+}
+
+#user_nick, #user_name{
+	font-size: 14pt;
+	color: #00A3A5;
+}
+
+#user_nick{
+	font-weight: bolder;
+}
+
+#user_name{
+	font-size: 11pt;
+	color:gray;
+	font-weight: normal;
+	margin-top: -5px;
+}
+
+div.stats{
+	text-align: center;
+}
+
+span.rating{
+	color: #00AD90;
+	font-size: 28pt;
+	font-weight: bolder;
+}
+
+span.rating_text{
+	color:gray;
 }
 
 aside nav li{
@@ -108,11 +160,4 @@ aside nav li:hover{
 	background: -o-linear-gradient( #00B9D5 , #009EB9); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient( #00B9D5 , #009EB9); /* For Firefox 3.6 to 15 */
 	background: linear-gradient( #00B9D5 , #009EB9); /* Standard syntax */
-}
-
-
-section{
-	margin: auto;
-	border: 1px solid #DFDFDF;
-	padding: 20px;
 }
