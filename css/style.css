@@ -26,6 +26,7 @@ header{
 	position: fixed;
 	top: 0px;
 	width: 100%;
+	z-index: 1000;
 }
 
 header nav{
@@ -87,8 +88,42 @@ article{
 section{
 	margin-bottom: 25px;
 	background: white;
-	padding: 20px;
 	box-shadow: 2px 2px 11px #004F88;
+	height: 128px;
+}
+
+
+section .avatar{
+	float:left;
+	width: 128px;
+	height: 128px;
+}
+
+section .status{
+	width: 530px;
+	float:right;
+	padding: 20px;
+}
+
+section .avatar img{
+	margin-top: 28px;
+	margin-left: 28px;
+	z-index: 10;
+	position: absolute;
+	border:2px solid white;
+}
+
+.background_image{
+	position: absolute;
+	z-index: 1;
+	width: 128px;
+	height: 128px;
+	-webkit-filter: blur(2px);
+	-moz-filter: blur(2px);
+	-o-filter: blur(2px);
+	-ms-filter: blur(2px);
+	filter: blur(2px);
+	opacity: .7;
 }
 
 aside div.user_information{
@@ -98,7 +133,7 @@ aside div.user_information{
 	box-shadow: 2px 2px 11px #004F88;
 }
 
-div.avatar{
+aside div.avatar{
 	float: left;
 }
 
@@ -160,4 +195,50 @@ aside nav li:hover{
 	background: -o-linear-gradient( #00B9D5 , #009EB9); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient( #00B9D5 , #009EB9); /* For Firefox 3.6 to 15 */
 	background: linear-gradient( #00B9D5 , #009EB9); /* Standard syntax */
+}
+
+.action{
+	width: 128px;
+	height: 128px;
+	border:1px solid black;
+	background: #292929;
+	color:white;
+	padding-top: 20px;
+	position: absolute;
+	z-index: 500;
+	text-align: center;
+	/*display: none;*/
+}
+
+h1{
+	font-size: 11pt;
+	text-align: center;
+}
+
+.share_buttons{
+	margin-top: 10px;
+	padding-top: 15px;
+	border-top: 1px solid #525252;
+}
+
+.fb, .tw, .g, .ins{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+}
+
+.fb{
+	background: url(../img/fb.png);
+}
+
+.tw{
+	background: url(../img/twitter.png);
+}
+
+.g{
+	background: url(../img/g.png);
+}
+
+.ins{
+	background: url(../img/instagram.png);
 }

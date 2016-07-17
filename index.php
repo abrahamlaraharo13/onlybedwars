@@ -26,9 +26,33 @@
 
 		<article>
 
+			<?php 
+				for ($i=0; $i < 10; $i++) { 
+			?>
 			<section>
-				erteretetet
+				<div class="avatar">
+					<div class="background_image" style="background:url(http://pipsum.com/128x128.jpg);"></div>
+					<img src="http://pipsum.com/64x64.jpg" alt="">
+					<div class="action">
+						<h1>peroerd587</h1>
+						<div class="share_buttons">
+							<a href="#" title="Compartir en facebook" ><span class="fb"></span></a>
+							<a href="#" title="Compartir en twitter" ><span class="tw"></span></a>
+							<a href="#" title="Compartir en Google+" ><span class="g"></span></a>
+							<a href="#" title="Compartir en Instagram" ><span class="ins"></span></a>
+						</div>
+					</div>
+				</div>
+				<div class="status">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur exercitationem sit dolores recusandae, reprehenderit atque eos quod excepturi sunt mollitia maxime corrupti, fuga modi vel non architecto quos perspiciatis aperiam? iciatis aperiam
+					</p>
+				</div>
+				<div style="clear:both;"></div>
 			</section>
+			<?php
+			}
+			?>
 
 		</article>
 
