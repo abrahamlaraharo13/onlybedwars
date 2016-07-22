@@ -4,12 +4,15 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/views.js"></script>
 </head>
 <body>
 	<header>
 		<nav>
 			<ul>
-				<li><img src="http://pipsum.com/128x128.jpg" width="45" alt="Pescame"></li>
+				<li>
+					<span class="menu-avatar"></span>
+				</li>
 				<li>
 					<form action="#">
 						<input type="text" placeholder="Buscar">
@@ -29,10 +32,10 @@
 			<?php 
 				for ($i=0; $i < 10; $i++) { 
 			?>
-			<section>
+			<section onmouseover="showShareBox(this)" onmouseout="showShareBox(this)">
 				<div class="avatar">
-					<div class="background_image" style="background:url(http://pipsum.com/128x128.jpg);"></div>
-					<img src="http://pipsum.com/64x64.jpg" alt="">
+					<div class="background_image" style="background:url(img/avatar.jpg);"></div>
+					<img src="img/avatar64.jpg" alt="">
 					<div class="action">
 						<h1>peroerd587</h1>
 						<div class="share_buttons">
@@ -61,7 +64,7 @@
 
 			<div class="user_information">
 				<div class="avatar">
-					<img src="http://pipsum.com/128x128.jpg" alt="Avatar" width="100">
+					<span class="aside-avatar" style="background:url(img/avatar100.jpg) center;"></span>
 				</div>
 				<div class="information">
 					<h1 id="user_nick">PerroDelMal</h1>
@@ -72,6 +75,11 @@
 					</div>
 				</div>
 				<div style="clear:both;"></div>
+			</div>
+
+			<div class="user_information">
+				<h1>Tus Escritores</h1>
+				<p>Esta es alguna información relevante</p>
 			</div>
 
 			<nav>

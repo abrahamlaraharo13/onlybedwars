@@ -11,6 +11,13 @@ body{
 	font-family: helvetica;
 }
 
+h1{
+	color: #00A3A5;
+	font-size: 14pt;
+	border-bottom: 1px solid #A7D8D9;
+	margin-bottom: 3px;
+}
+
 .container{
 	width: 1000px;
 	margin: auto;
@@ -50,6 +57,7 @@ header form {
 	margin-top: 12px;	
 	border-radius: 100px;
 	background: white;
+	padding-right: 5px;
 }
 
 header input{
@@ -66,9 +74,13 @@ header button{
 	border:0;
 }
 
-header img{
+header .menu-avatar{
+	display: inline-block;
 	margin: 5px;
 	border-radius: 100px;
+	width: 45px;
+	height: 45px;
+	background-color: #E1E1E1;
 }
 
 aside, article{
@@ -97,6 +109,7 @@ section .avatar{
 	float:left;
 	width: 128px;
 	height: 128px;
+	background: #E1E1E1;
 }
 
 section .status{
@@ -137,6 +150,13 @@ aside div.avatar{
 	float: left;
 }
 
+aside .aside-avatar{
+	width: 100px;
+	height: 100px;
+	display: block;
+	background-color: #E1E1E1; 
+}
+
 div.information{
 	float: left;
 	margin-left: 10px;
@@ -145,6 +165,7 @@ div.information{
 #user_nick, #user_name{
 	font-size: 14pt;
 	color: #00A3A5;
+	border: none;
 }
 
 #user_nick{
@@ -207,12 +228,14 @@ aside nav li:hover{
 	position: absolute;
 	z-index: 500;
 	text-align: center;
-	/*display: none;*/
+	display: none;
 }
 
-h1{
+section h1{
 	font-size: 11pt;
 	text-align: center;
+	color: #35CADD;
+	border: none;
 }
 
 .share_buttons{
