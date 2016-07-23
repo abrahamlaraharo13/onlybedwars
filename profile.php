@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Perfil | Red Social</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/views.js"></script>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li>
+					<a href="profile.php"><span class="menu-avatar"></span></a>
+				</li>
+				<li>
+					<form action="#">
+						<input type="text" placeholder="Buscar">
+						<button>
+							<img src="img/glasses.png" height="10" alt="Buscar">
+						</button>
+					</form>
+				</li>
+				<li class="menu_option option"><a href="index.php">Datos</a></li>
+				<li class="option"><a href="index.php">Perfil</a></li>
+				<li class="option"><a href="index.php">Configuración</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="container banner">
+		<div class="user_photo">
+			<img src="img/avatar100.jpg" alt="Profile">
+			<span class="user_name">ptime</span>
+			<span class="user_fullname">Programación Time</span>
+		</div>
+	</div>
+
+	<div class="container profile">
+
+		<article>
+
+			<?php 
+				for ($i=0; $i < 10; $i++) { 
+			?>
+			<section onmouseover="showShareBox(this)" onmouseout="showShareBox(this)">
+				<div class="avatar">
+					<div class="background_image" style="background:url(img/avatar.jpg);"></div>
+					<img src="img/avatar64.jpg" alt="">
+					<div class="action">
+						<h1>peroerd587</h1>
+						<div class="share_buttons">
+							<a href="#openmodal" title="Compartir en facebook" ><span class="fb"></span></a>
+							<a href="#openmodal" title="Compartir en twitter" ><span class="tw"></span></a>
+							<a href="#openmodal" title="Compartir en Google+" ><span class="g"></span></a>
+							<a href="#openmodal" title="Compartir en Instagram" ><span class="ins"></span></a>
+						</div>
+					</div>
+				</div>
+				<div class="status">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur exercitationem sit dolores recusandae, reprehenderit atque eos quod excepturi sunt mollitia maxime corrupti, fuga modi vel non architecto quos perspiciatis aperiam? iciatis aperiam
+					</p>
+				</div>
+				<div style="clear:both;"></div>
+			</section>
+			<?php
+			}
+			?>
+
+		</article>
+
+
+		<aside>
+
+			<div class="user_information">
+				<h1>Tus Escritores</h1>
+				<p>Esta es alguna información relevante</p>
+			</div>
+		</aside>
+
+		<div style="clear:both;"></div>
+	</div>
+
+	<div class="background_modal" id="openmodal">
+		<div class="modal_container">
+			<a href="#close" class="close_button"><img src="img/close.png" alt=""></a>
+			<div class="modal_content">
+				<h1>Aviso</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates rerum, dolor adipisci molestiae. Fugiat iusto, eos praesentium aut ipsam nam neque tempore dignissimos molestiae commodi eligendi provident reprehenderit ab velit?</p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
