@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Red Social</title>
 	<link rel="stylesheet" href="css/style.css">
 	<script type="text/javascript" src="js/views.js"></script>
 </head>
@@ -11,7 +11,7 @@
 		<nav>
 			<ul>
 				<li>
-					<span class="menu-avatar"></span>
+					<a href="profile.php"><span class="menu-avatar"></span></a>
 				</li>
 				<li>
 					<form action="#">
@@ -21,7 +21,9 @@
 						</button>
 					</form>
 				</li>
-				<!-- <li>Datos</li> -->
+				<li class="menu_option option"><a href="index.php">Datos</a></li>
+				<li class="option"><a href="index.php">Perfil</a></li>
+				<li class="option"><a href="index.php">Configuración</a></li>
 			</ul>
 		</nav>
 	</header>
