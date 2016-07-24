@@ -31,6 +31,15 @@
 
 		<article>
 
+
+			<section class="writer">
+				<textarea placeholder="¿Qué piensas?"></textarea>
+				<div class="buttons-writer">
+					<button class="default">Frases célebres</button>
+					<button class="general">Publicar</button>
+				</div>
+			</section>
+
 			<?php 
 				for ($i=0; $i < 10; $i++) { 
 			?>

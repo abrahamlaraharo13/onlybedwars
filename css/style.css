@@ -6,6 +6,7 @@
 	-webkit-box-sizing: border-box;
 	font-size: 12pt;
 	text-decoration: none;
+	text-decoration: none;
 }
 
 @font-face {
@@ -24,6 +25,41 @@ h1{
 	font-size: 14pt;
 	border-bottom: 1px solid #A7D8D9;
 	margin-bottom: 3px;
+}
+
+button.general, button.default{
+	padding: 4px;
+	font-family: 'Raleway';
+	background: black; 
+	background: -webkit-linear-gradient( #0082D9, #0074B1);
+	background: -o-linear-gradient( #0082D9, #0074B1);
+	background: -moz-linear-gradient( #0082D9, #0074B1);
+	background: linear-gradient( #0082D9, #0074B1);
+	font-weight: bold;
+	border-radius: 3px;
+	border: 1px solid #0082D9;
+	color: white;
+	margin:5px;
+	cursor: pointer;
+	font-size: 10pt;
+}
+
+button.general:hover{
+	background: black; 
+	background: -webkit-linear-gradient( #0074B1 , #0082D9); 
+	background: -o-linear-gradient( #0074B1 , #0082D9); 
+	background: -moz-linear-gradient( #0074B1 , #0082D9); 
+	background: linear-gradient( #0074B1 , #0082D9);
+}
+
+button.default{
+	background: #B5C0C1;
+	color: #000;
+	border: 1px solid #7B8586;
+}
+
+button.default:hover{
+	background: #CAD8D9;
 }
 
 .container{
@@ -310,6 +346,29 @@ section h1{
 
 .ins{
 	background: url(../img/instagram.png);
+}
+
+section.writer{
+	text-align: right;
+	min-height: 150px;
+}
+
+section.writer textarea{
+	width: 100%;
+	min-width: 660px;
+	max-width: 660px;
+	border:none;
+	background: transparent;
+	padding: 10px;
+	font-family: 'Raleway';
+	min-height: 111px;
+	max-height: 111px;
+	resize: none;
+}
+
+div.buttons-writer{
+	background: #DFE4E5;
+	border-radius: 0 0 8px 8px;
 }
 
 
