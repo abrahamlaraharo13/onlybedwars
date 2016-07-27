@@ -43,26 +43,27 @@
 			<?php 
 				for ($i=0; $i < 10; $i++) { 
 			?>
-			<section onmouseover="showShareBox(this)" onmouseout="showShareBox(this)">
+			<section>
 				<div class="avatar">
-					<div class="background_image" style="background:url(img/avatar.jpg);"></div>
-					<img src="img/avatar64.jpg" alt="">
-					<div class="action">
-						<h1>peroerd587</h1>
-						<div class="share_buttons">
-							<a href="#" title="Compartir en facebook" ><span class="fb"></span></a>
-							<a href="#" title="Compartir en twitter" ><span class="tw"></span></a>
-							<a href="#" title="Compartir en Google+" ><span class="g"></span></a>
-							<a href="#" title="Compartir en Instagram" ><span class="ins"></span></a>
-						</div>
+					<div class="background_image">
+						<img src="img/avatar64.jpg" alt="">
 					</div>
+					<div class="action">
+						<h2><a href="profile.php">Benito Camelo Parado Al Fondo</a></h2>
+						<h3> <a href="#">Hace dos horas</a></h3>
+					</div>
+					<div style="clear:both;"></div>
 				</div>
 				<div class="status">
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur exercitationem sit dolores recusandae, reprehenderit atque eos quod excepturi sunt mollitia maxime corrupti, fuga modi vel non architecto quos perspiciatis aperiam? iciatis aperiam
 					</p>
 				</div>
-				<div style="clear:both;"></div>
+				<div class="like_tools">
+					<a href="#" class="like_button">Me gusta</a>
+					<a href="#" class="dislike_button">No me gusta</a>
+					<a href="#openmodal" class="comments_button">25 Comentarios</a>
+				</div>
 			</section>
 			<?php
 			}
@@ -93,17 +94,42 @@
 				<p>Esta es alguna información relevante</p>
 			</div>
 
-			<nav>
-				<ul>
-					<li onclick="#">Opción 1</li>
-					<li onclick="#">Opción 2</li>
-					<li onclick="#">Opción 3</li>
-					<li onclick="#">Opción 4</li>
-				</ul>
-			</nav>
+			<footer>
+				Círculos &copy; 2016
+			</footer>
+
 		</aside>
 
 		<div style="clear:both;"></div>
+	</div>
+	<div class="background_modal" id="openmodal">
+		<div class="modal_container">
+			<a href="#close" class="close_button"><img src="img/close.png" alt=""></a>
+			<div class="modal_content">
+				<section>
+				<div class="avatar">
+					<div class="background_image">
+						<img src="img/avatar64.jpg" alt="">
+					</div>
+					<div class="action">
+						<h2><a href="profile.php">Benito Camelo Parado Al Fondo</a></h2>
+						<h3> <a href="#">Hace dos horas</a></h3>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+				<div class="status">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur exercitationem sit dolores recusandae, reprehenderit atque eos quod excepturi sunt mollitia maxime corrupti, fuga modi vel non architecto quos perspiciatis aperiam? iciatis aperiam
+					</p>
+				</div>
+				<div class="like_tools">
+					<a href="#" class="like_button">Me gusta</a>
+					<a href="#" class="dislike_button">No me gusta</a>
+					<a href="#openmodal" class="comments_button">25 Comentarios</a>
+				</div>
+			</section>
+			</div>
+		</div>
 	</div>
 	
 </body>

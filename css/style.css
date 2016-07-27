@@ -7,6 +7,7 @@
 	font-size: 12pt;
 	text-decoration: none;
 	text-decoration: none;
+	color: #000;
 }
 
 @font-face {
@@ -15,9 +16,16 @@
 }
 
 body{
-	background: url(../img/weather.png);
+	/*background: url(../img/weather.png);*/
 	font-family: 'Raleway';
 	line-height: 17pt;
+	background-color: #E5E9EB;
+}
+
+footer{
+	text-align: right;
+	font-size: 12pt;
+	color: #6D6D6D;
 }
 
 h1{
@@ -30,11 +38,7 @@ h1{
 button.general, button.default{
 	padding: 4px;
 	font-family: 'Raleway';
-	background: black; 
-	background: -webkit-linear-gradient( #0082D9, #0074B1);
-	background: -o-linear-gradient( #0082D9, #0074B1);
-	background: -moz-linear-gradient( #0082D9, #0074B1);
-	background: linear-gradient( #0082D9, #0074B1);
+	background: #0074B1;
 	font-weight: bold;
 	border-radius: 3px;
 	border: 1px solid #0082D9;
@@ -45,21 +49,17 @@ button.general, button.default{
 }
 
 button.general:hover{
-	background: black; 
-	background: -webkit-linear-gradient( #0074B1 , #0082D9); 
-	background: -o-linear-gradient( #0074B1 , #0082D9); 
-	background: -moz-linear-gradient( #0074B1 , #0082D9); 
-	background: linear-gradient( #0074B1 , #0082D9);
+	background: #0082D9; 
 }
 
 button.default{
-	background: #B5C0C1;
+	background: #C5C5C5;
 	color: #000;
 	border: 1px solid #7B8586;
 }
 
 button.default:hover{
-	background: #CAD8D9;
+	background: #D9D9D9;
 }
 
 .container{
@@ -72,11 +72,7 @@ button.default:hover{
 /* ======== principal menu ========*/
 
 header{
-	background: black; /* For browsers that do not support gradients */
-	background: -webkit-linear-gradient( #004B77 , #022031); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient( #004B77 , #022031); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient( #004B77 , #022031); /* For Firefox 3.6 to 15 */
-	background: linear-gradient( #004B77 , #022031); /* Standard syntax */
+	background: #003556;
 	position: fixed;
 	top: 0px;
 	width: 100%;
@@ -176,51 +172,55 @@ article{
 section{
 	margin-bottom: 25px;
 	background: white;
-	box-shadow: 2px 2px 11px #004F88;
-	height: 128px;
+	/*box-shadow: 2px 2px 11px #004F88;*/
+	border:1px solid #A1B1B4;
+	/*height: 128px;*/
 	border-radius: 8px;
 }
 
 
 section .avatar{
-	float:left;
-	width: 128px;
-	height: 128px;
-	background: #E1E1E1;
+	border-bottom: 1px solid #D0D0D0;
 }
 
 section .status{
-	width: 530px;
-	float:right;
 	padding: 20px;
 }
 
 section .avatar img{
-	margin-top: 28px;
-	margin-left: 28px;
-	z-index: 10;
-	position: absolute;
 	border:2px solid white;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
 }
 
 .background_image{
-	position: absolute;
-	z-index: 1;
-	width: 128px;
-	height: 128px;
-	-webkit-filter: blur(2px);
-	-moz-filter: blur(2px);
-	-o-filter: blur(2px);
-	-ms-filter: blur(2px);
-	filter: blur(2px);
-	opacity: .7;
+	padding: 10px;
+	float: left;
+}
+
+.action{
+	float: left;
+	padding: 10px;
+
+}
+
+section .action h2 a{
+	font-size: 12pt;
+	color: #006673;
+}
+
+section .action h3 a{
+	font-size: 10pt;
+	color: #B4B4B4;
 }
 
 aside div.user_information{
 	background: white;
 	padding: 5px;
 	margin-bottom: 20px;
-	box-shadow: 2px 2px 11px #004F88;
+	/*box-shadow: 2px 2px 11px #004F88;*/
+	border:1px solid #A1B1B4;
 	border-radius: 5px;
 }
 
@@ -284,33 +284,12 @@ aside nav li{
 	cursor: pointer;
 	margin-bottom:5px;
 
-	background: #0086D5; /* For browsers that do not support gradients */
-	background: -webkit-linear-gradient( #0086D5 , #0074B9); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient( #0086D5 , #0074B9); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient( #0086D5 , #0074B9); /* For Firefox 3.6 to 15 */
-	background: linear-gradient( #0086D5 , #0074B9); /* Standard syntax */
+	background: #0086D5; 
 	color: white;
 }
 
 aside nav li:hover{
-	background: #00B9D5; /* For browsers that do not support gradients */
-	background: -webkit-linear-gradient( #00B9D5 , #009EB9); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient( #00B9D5 , #009EB9); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient( #00B9D5 , #009EB9); /* For Firefox 3.6 to 15 */
-	background: linear-gradient( #00B9D5 , #009EB9); /* Standard syntax */
-}
-
-.action{
-	width: 128px;
-	height: 128px;
-	border:1px solid black;
-	background: #292929;
-	color:white;
-	padding-top: 20px;
-	position: absolute;
-	z-index: 500;
-	text-align: center;
-	display: none;
+	background: #00B9D5; 
 }
 
 section h1{
@@ -430,7 +409,8 @@ div.background_modal:target{
 
 div.modal_container{
 	background-color: #05413F;
-	box-shadow: 0px 0px 10px #000;
+	/*box-shadow: 0px 0px 10px #000;*/
+	border:1px solid #A1B1B4;
 	border-radius: 5px;
 	color: #000;
 	margin: 10% auto;
@@ -449,4 +429,24 @@ div.background_modal .close_button img{
 	float: right;
 	color: #fff;
 	width: 32px;
+}
+
+div.like_tools{
+	padding:5px 0 10px 20px;
+	border-top:1px solid #D5D5D5;
+}
+
+a.like_button, a.dislike_button, a.comments_button{
+	font-size:9pt;
+	color:#0072BE ;
+	margin-right:10px;
+}
+
+a.dislike_button{
+	color: #BE0300 ;
+}
+
+a.comments_button{
+	float:right;
+	margin-right:20px;
 }
