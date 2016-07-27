@@ -408,21 +408,23 @@ div.background_modal:target{
 
 
 div.modal_container{
-	background-color: #05413F;
+	background: rgba(0,75, 105, .5);
 	/*box-shadow: 0px 0px 10px #000;*/
 	border:1px solid #A1B1B4;
 	border-radius: 5px;
 	color: #000;
-	margin: 10% auto;
-	width: 500px;
+	margin: 70px auto;
+	width: 650px;
 	padding: 8px;
 	position: relative;
 }
 
 div.modal_content{
+	overflow: auto;
 	padding: 20px;
 	border-radius: 5px;
 	background: #fff;
+	height: 500px;
 }
 
 div.background_modal .close_button img{
@@ -449,4 +451,69 @@ a.dislike_button{
 a.comments_button{
 	float:right;
 	margin-right:20px;
+}
+
+/*============= comentarios ==============*/
+
+div.comment{
+	border-top: 1px solid #C7C7C7;
+}
+
+.comment div.image, .comment div.text{
+	float: left;
+}
+
+.comment div.image img{
+	margin: 5px;
+	border-radius: 50%;
+}
+
+.comment div.text{
+	padding: 8px;
+	font-size: 9pt;
+}
+
+div.text a{
+	font-size: 9pt;
+	color: #006D87;
+	font-weight: bold;
+	margin-right: 5px;
+}
+
+div.text input{
+	width: 470px;
+	height: 20px;
+	border:none;
+	font-size: 9pt;
+}
+
+div.user_menu{
+	height:40px;
+	border:1px solid #CCCCCC;
+	width:1000px;
+	margin:auto;
+	background: #fff;
+	font-size: 0px;
+}
+
+div.user_menu a{
+	margin: 0;
+	padding: 8px 20px 5px 20px;
+	display: inline-block;
+	background: #F2F2F2;
+	height: 100%;
+	border-right:1px solid #CCCCCC;
+	font-weight: bold;
+	font-size: 11pt;
+	color: #005166;
+}
+
+div.user_menu a:hover{
+	color: #001E26;
+	background: #FCFCFC;
+}
+
+div.user_menu .active{
+	color: #001E26;
+	background: #FCFCFC;
 }

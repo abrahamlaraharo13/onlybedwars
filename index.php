@@ -127,6 +127,32 @@
 					<a href="#" class="dislike_button">No me gusta</a>
 					<a href="#openmodal" class="comments_button">25 Comentarios</a>
 				</div>
+				<div class="comments_container">
+				<?php for ($i=0; $i < 15; $i++) { ?>
+					<div class="comment">
+						<div class="image">
+							<img src="img/avatar64.jpg" width="35" alt="Imagen">
+						</div>
+						<div class="text">
+							<a href="#" class="name">Soila del Hoyo Prieto</a>
+								Lorem ipsum dolor sit amet, consectetur adipisicing.
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+				<?php } ?>
+				<!-- ========== caja comentario ===========  -->
+					<div class="comment">
+						<div class="image">
+							<img src="img/avatar64.jpg" width="35" alt="Imagen">
+						</div>
+						<div class="text">
+							<form method="post" action="#">
+								<input type="text" name="comment" placeholder="Haz un comentario">
+							</form>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+				</div>
 			</section>
 			</div>
 		</div>

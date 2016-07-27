@@ -34,6 +34,13 @@
 			<span class="user_name">ptime</span>
 			<span class="user_fullname">Programación Time</span>
 		</div>
+		<button class="default"> + Agregar a mi red</button>
+	</div>
+	<div class="user_menu">
+		<a href="#" class="active">Mis Historias</a>
+		<a href="#">Información</a>
+		<a href="#">Fotos</a>
+		<a href="#">Más</a>
 	</div>
 
 	<div class="container profile">
@@ -70,8 +77,8 @@
 		<aside>
 
 			<div class="user_information">
-				<h1>Tus Escritores</h1>
-				<p>Esta es alguna información relevante</p>
+				<h1>Información</h1>
+				<p>Hola soy Juna y Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, cupiditate!</p>
 			</div>
 		</aside>
 
