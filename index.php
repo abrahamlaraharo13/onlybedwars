@@ -22,15 +22,17 @@
 			if ($page == "profile" or $page == "home") {
 				include 'common/status.php';
 			}else{
-				echo "<h1>Página no encontrada</h1>";
+				include 'common/error404.php';
 			}
 		?>
 
 
 		<aside>
 
-		<?php 
-			include 'common/aside_content.php';
+		<?php
+			if ($page == "profile" or $page == "home") {
+				include 'common/aside_content.php';
+			}
 		?>
 
 		</aside>

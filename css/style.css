@@ -517,3 +517,22 @@ div.user_menu .active{
 	color: #001E26;
 	background: #FCFCFC;
 }
+
+
+/* error 404*/
+
+div.error404_container{
+	padding: 10% 40px;
+	text-align: center;
+	background: #fff;
+	border:1px solid #B8B8B8;
+}
+
+.error404_container span{
+	font-size: 20pt;
+	color: #838383;
+}
+
+.error404_container img{
+	width: 400px;
+}
